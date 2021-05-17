@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.event-color {
+  color: red;
+  background: red;
+}
+
+.MuiPaper-root.MuiCard-root.event-color.MuiPaper-elevation1.MuiPaper-rounded {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  font-color: #fff;
+  font-size: 13px;
+}
+
+.event-Warmup {
+  background-color: red !important;
+}
+.event-1 {
+  background-color: green !important;
+}
+.event-VIP {
+  background-color: blue !important;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiPaper-root.MuiCard-root.event-color.MuiPaper-elevation1.MuiPaper-rounded {
+  position: relative;
+  overflow: visible !important;
+}
+
+.arrow-icon-wrap {
+  color: #fff;
+  font-size: 60px;
+  margin-top: -44px;
+}

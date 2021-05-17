@@ -8,6 +8,8 @@ import configureStore from './redux/store';
 
 import './App.css';
 
+const List = React.lazy(() => import('./components/List'));
+
 const history = createBrowserHistory();
 const store = configureStore(history);
 
@@ -16,7 +18,14 @@ function App() {
     <Provider store={store}>
       <Router history={history}>
         <Suspense fallback={'...Loading'}>
-          <Switch></Switch>
+          <Switch>
+            <Route
+              exact
+              path={'/'}
+              name="List"
+              render={(props) => <List {...props} />}
+            />
+          </Switch>
         </Suspense>
       </Router>
     </Provider>
