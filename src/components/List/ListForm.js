@@ -75,7 +75,7 @@ const ListForm = ({ lists, isLoading }) => {
         <Paper elevation={7} style={styles.Paper}>
           <h4>Loading</h4>
         </Paper>
-      ) : lists && lists.length < 0 ? (
+      ) : lists && lists.length > 0 ? (
         lists.map((item, key) => {
           const colorCode =
             item.event === 'Warmup'
